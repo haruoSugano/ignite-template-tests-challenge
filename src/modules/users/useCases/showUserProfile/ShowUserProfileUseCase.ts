@@ -10,7 +10,7 @@ export class ShowUserProfileUseCase {
     private usersRepository: IUsersRepository,
   ) {}
 
-  async execute(user_id: string) {
+  async execute(user_id: string | undefined) {
     const user = await this.usersRepository.findById(user_id);
 
     if (!user) {
