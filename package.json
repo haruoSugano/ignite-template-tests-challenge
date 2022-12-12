@@ -9,6 +9,7 @@
     "test": "NODE_ENV=test JWT_SECRET=senhasupersecreta123 jest"
   },
   "dependencies": {
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
@@ -23,12 +24,14 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/cors": "^2.8.10",
     "@types/express": "^4.17.11",
     "@types/jest": "^28.1.7",
     "@types/jsonwebtoken": "^8.5.1",
     "@types/node": "^14.14.35",
+    "@types/supertest": "^2.0.12",
     "@types/uuid": "^8.3.0",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",

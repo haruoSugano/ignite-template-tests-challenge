@@ -36,7 +36,7 @@ describe("Show profile", () => {
             password: user.password
         });
 
-        const userProfile = await showUserProfileUseCase.execute(userAuthenticated.user.id);
+        const userProfile = await showUserProfileUseCase.execute(userAuthenticated.user.id as string);
 
         expect(userProfile).toEqual(createUser);
     });
